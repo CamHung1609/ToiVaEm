@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>tỏ tềnh em</title>
+    </head>
+    <body>
+        <h2>Anh rất chào em</h2>
+        <p>Em cho tôi hỏi 1 câu</p>
+ 
+        <h4>Tôi và em yêu nhau nhé ?</h4>
+        <input type="radio" value="Cảm ơn emmmm <3" name="gender" /> Ok luôn<br/>
+        <input type="radio" value="Rất tiếc :'(( " name="gender" /> Không ! <br/>
+ 
+        <input type="button" id="btn1" value="nhấn vào đây để chốt"/>
+ 
+        <script language="javascript">
+ 
+            document.getElementById("btn1").onclick = function ()
+            {
+                var checkbox = document.getElementsByName("gender");
+                for (var i = 0; i < checkbox.length; i++){
+                    if (checkbox[i].checked === true){
+                        alert(checkbox[i].value);
+                    }
+                }
+            };
+ 
+        </script>
+    </body>
+</html>
